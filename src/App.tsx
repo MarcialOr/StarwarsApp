@@ -1,10 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Login from './pages/login';
-import Characters from './pages/characters';
-import Movies from './pages/movies';
-import Starships from './pages/starships';
-import Planets from './pages/planets';
+import Login from './pages/Login';
+import Characters from './pages/Characters';
+import Movies from './pages/Movies';
+import Starships from './pages/Starships';
+import Planets from './pages/Planets';
+
 
 const App: React.FC = () => {
   return (

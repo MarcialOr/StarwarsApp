@@ -1,0 +1,33 @@
+/* Center the row and ensure it adjusts to the content */
+.d-flex {
+    justify-content: center; /* Center the cards horizontally */
+  }
+  
+  /* Ensure columns are centered */
+  .row {
+    justify-content: center; /* Centers the columns inside the row */
+  }
+  
+  /* Add smooth animations when hovering over the card */
+  .card-hover {
+    transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+  }
+  
+  .card-hover:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  }
+  
+  /* Background Image for the whole page */
+  body {
+    background-image: url('./../assets//starwars.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  h1 {
+    color:aliceblue;
+  }
+  
