@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebaseConfig';
 import { useNavigate } from 'react-router-dom';
-import "./../css/Login.css";
+import "./../css/Login.css"; // Custom CSS for Star Wars theme
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState<string>('');
@@ -31,20 +31,20 @@ const Login: React.FC = () => {
 
   return (
     <div className="container my-5">
-      <h2 className="text-center mb-4">Login</h2>
+      <h2 className="text-center mb-4 text-starwars">Login</h2>
       <div className="row justify-content-center">
         <div className="col-md-6">
-          <div className="card shadow-sm">
+          <div className="card card-starwars shadow-sm">
             <div className="card-body">
               <form>
                 <div className="mb-3">
-                  <label htmlFor="email" className="form-label">
+                  <label htmlFor="email" className="form-label text-starwars">
                     Email
                   </label>
                   <input
                     type="email"
                     id="email"
-                    className="form-control"
+                    className="form-control input-starwars"
                     placeholder="Enter your email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -52,13 +52,13 @@ const Login: React.FC = () => {
                   />
                 </div>
                 <div className="mb-3">
-                  <label htmlFor="password" className="form-label">
+                  <label htmlFor="password" className="form-label text-starwars">
                     Password
                   </label>
                   <input
                     type="password"
                     id="password"
-                    className="form-control"
+                    className="form-control input-starwars"
                     placeholder="Enter your password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
@@ -68,14 +68,14 @@ const Login: React.FC = () => {
                 <div className="d-flex justify-content-between">
                   <button
                     type="button"
-                    className="btn btn-primary"
+                    className="btn btn-primary btn-starwars"
                     onClick={handleLogin}
                   >
                     Login
                   </button>
                   <button
                     type="button"
-                    className="btn btn-secondary"
+                    className="btn btn-secondary btn-starwars"
                     onClick={handleRegister}
                   >
                     Register

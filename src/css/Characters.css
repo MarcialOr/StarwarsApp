@@ -1,33 +1,69 @@
-/* Center the row and ensure it adjusts to the content */
-.d-flex {
-    justify-content: center; /* Center the cards horizontally */
-  }
-  
-  /* Ensure columns are centered */
-  .row {
-    justify-content: center; /* Centers the columns inside the row */
-  }
-  
-  /* Add smooth animations when hovering over the card */
-  .card-hover {
-    transition: transform 0.3s, box-shadow 0.3s ease-in-out;
-  }
-  
-  .card-hover:hover {
-    transform: scale(1.05); /* Slight zoom effect */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
-  }
-  
-  /* Background Image for the whole page */
-  body {
-    background-image: url('./../assets//starwars.jpg'); /* Replace with your image path */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
+/* Add background image to the whole screen */
+body {
+  background-image: url('./../assets/starwars.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%; /* Ensures it covers the entire content */
+  min-height: 100vh; /* Ensures it covers the viewport */
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: #feda4a;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
 
-  h1 {
-    color:aliceblue;
-  }
-  
+html, body {
+  height: 100%;
+}
+
+
+
+h1 {
+  color: #feda4a;
+  font-family: 'Star Jedi', sans-serif;
+  text-shadow: 0 0 10px #feda4a;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  margin-top: auto;
+  padding: 20px;
+  color: #feda4a;
+}
+.card {
+  background-color: rgba(0, 0, 0, 0.9); /* Dark background for the cards */
+  border: 2px solid #feda4a; /* Yellow border around the cards */
+  color: #fff; /* White text inside the card */
+  font-family: 'Arial', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 15px;
+}
+
+.card-hover:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 0 20px #feda4a; /* Yellow glow around the card */
+}
+
+.card-title {
+  color: #feda4a; /* Yellow for the card title */
+  font-family: 'Star Jedi', sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.list-unstyled li {
+  color: #fff; /* White color for the details in the card */
+}
+
+.card-body {
+  text-align: center;
+}
+
+.d-flex {
+  margin-bottom: 20px;
+}

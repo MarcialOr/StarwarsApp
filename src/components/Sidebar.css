@@ -1,0 +1,39 @@
+/* Sidebar.css */
+.sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    height: 100vh;
+    transition: all 0.3s;
+  }
+  
+  .sidebar.closed {
+    margin-left: -250px;
+  }
+  
+  .sidebar.open {
+    margin-left: 0;
+  }
+  
+  .content {
+    transition: margin-left 0.3s;
+  }
+  
+  .content.open {
+    margin-left: 250px;
+  }
+  
+  .content.closed {
+    margin-left: 0;
+  }
+  
+  .nav-link {
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .nav-link:hover {
+    background-color: #e9ecef;
+    border-radius: 4px;
+  }
+  

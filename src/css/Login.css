@@ -1,18 +1,55 @@
-/* styles.css */
+/* Login.css */
 body {
-    height: 100vh; /* Full viewport height */
-    margin: 0; /* Remove default margin */
-  }
-  
-  .login-container {
-    display: flex; /* Enable Flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Full viewport height */
-  }
-  
-  .card {
-    width: 100%; /* Make card take full width in its container */
-    max-width: 400px; /* Set a max width for the card */
-  }
-  
+  background-image: url('/path-to-your-starwars-background.jpg'); /* Add your Star Wars background image */
+  background-size: cover;
+  background-position: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-starwars {
+  color: #feda4a;
+  font-family: 'Star Jedi', sans-serif; /* Use a Star Wars font, download or include it via Google Fonts if available */
+  letter-spacing: 1.5px;
+}
+
+.card-starwars {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+.input-starwars {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #feda4a;
+  border: 1px solid #feda4a;
+}
+
+.input-starwars::placeholder {
+  color: #feda4a;
+}
+
+.btn-starwars {
+  background-color: #feda4a;
+  color: black;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-starwars:hover {
+  background-color: #ffeb3b;
+  color: black;
+  box-shadow: 0px 0px 10px 2px #ffeb3b;
+}
+
+.btn-secondary.btn-starwars {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.container {
+  margin-top: 100px;
+}
+
+.card-body {
+  padding: 2rem;
+}

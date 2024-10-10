@@ -1,0 +1,36 @@
+/* Navbar.css */
+.navbar-starwars {
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background for the navbar */
+    border-bottom: 2px solid #feda4a; /* Yellow border at the bottom */
+  }
+  
+  .navbar-brand {
+    font-family: 'Star Jedi', sans-serif; /* Star Wars themed font */
+    color: #feda4a; /* Yellow text for the brand */
+    letter-spacing: 2px;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;base64,...'); /* Custom SVG for the navbar toggler icon */
+  }
+  
+  .text-starwars {
+    color: #feda4a; /* Yellow color for all navbar links */
+    font-family: 'Star Jedi', sans-serif;
+    transition: color 0.3s ease;
+  }
+  
+  .text-starwars:hover {
+    color: #ffeb3b; /* Brighter yellow on hover */
+    text-shadow: 0px 0px 5px #ffeb3b;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    padding: 10px 15px;
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background change on hover */
+    border-radius: 5px;
+  }
+  
