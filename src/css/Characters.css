@@ -3,7 +3,7 @@ body {
   background-image: url('./../assets/starwars.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   height: 100%; /* Ensures it covers the entire content */
   min-height: 100vh; /* Ensures it covers the viewport */
   margin: 0;

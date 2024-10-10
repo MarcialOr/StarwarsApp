@@ -1,6 +1,7 @@
 /* Login.css */
 body {
   background-image: url('/path-to-your-starwars-background.jpg'); /* Add your Star Wars background image */
+  background-repeat: repeat; /* This will repeat the background image */  
   background-size: cover;
   background-position: center;
   font-family: 'Roboto', sans-serif;
